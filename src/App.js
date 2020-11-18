@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import { Route, Switch, Redirect } from 'react-router-dom'
+
+import LoginPage from './pages/login/login.page'
+import PasswordPage from './pages/password/password.page'
+import Header from './containers/header/header.container'
+import RepoPage from './pages/repo/repo.page';
+import CommitPage from './pages/commit/CommitPage.page';
+import NotFoundPage from './pages/notFound/NotFoundPage.page';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path='/login' component={LoginPage} />
+
+        {/* <Route render={() => <Redirect to='login' />} /> */}
+
+        <Route exact path='/password' component={PasswordPage} />
+        <Route exact path='/repo/:name' component={CommitPage} />
+        <Route exact path='/repo' component={RepoPage} />
+
+        <Route component={NotFoundPage} />
+      </Switch>
     </div>
   );
 }
