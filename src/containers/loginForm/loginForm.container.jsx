@@ -8,7 +8,7 @@ const LoginForm = () => {
     return (
         <div className="text-center">
             NOTE: Plese Enter "BAbolfazl"
-            <CustomInput  type='text' label="Github username" state='username' />
+            <CustomInput  type='text' label="Github username" state='username' value="BAbolfazl" />
             <Link to='/password'>
                 <button className="btn btn-primary w-50 mt-4">next</button>
             </Link>

@@ -1,9 +1,9 @@
 import user_actionTypes from './user.types'
 
 const INITIAL_STATE = {
-    username: '',
-    pass: '',
-    auth: false,
+    username: 'babolfazl',
+    pass: '1234',
+    auth: true,
 }
 
 const userReducer = (state = INITIAL_STATE, action) => {

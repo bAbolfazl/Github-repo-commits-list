@@ -15,7 +15,7 @@ const commitReducer = (state = INITIAL_STATE, action) => {
         case commit_actionTypes.SET_COMMITS:
             return {
                 ...state,
-                repo: action.payload
+                commits: action.payload
             }
 
         default:

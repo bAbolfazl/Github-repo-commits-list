@@ -6,6 +6,6 @@ export const setRepo = (repo) => ({
 })
 
 export const setCommits = (commits) => ({
-    type: commit_actionTypes.SET_REPO,
+    type: commit_actionTypes.SET_COMMITS,
     payload: commits
 })

@@ -20,12 +20,12 @@ const CustomInput = ({ label, state, setPass, setUsername, setRepo, ...others })
 const handle_state = (e, state, setPass, setUsername, setRepo) => {
     const value = e.target.value
     switch (state) {
-        case 'username':
-            setUsername(value)
-            break;
-        case 'pass':
-            setPass(value)
-            break;
+        // case 'username':
+        //     setUsername(value)
+        //     break;
+        // case 'pass':
+        //     setPass(value)
+        //     break;
         case 'repo':
             setRepo(value)
             break;

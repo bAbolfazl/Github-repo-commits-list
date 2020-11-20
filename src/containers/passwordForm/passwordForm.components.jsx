@@ -7,7 +7,7 @@ const PasswordForm = () => {
     return (
         <div className="text-center">
             NORE: Doesn't matter
-            <CustomInput type='password' label="Github password" state='pass' />
+            <CustomInput type='password' label="Github password" state='pass' value="1234" />
             <Link to='/repo'>
                 <button className="btn btn-primary w-50 mt-4">login</button>
             </Link>

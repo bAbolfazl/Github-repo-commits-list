@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { BtnS } from './logoutBtn.styles';
 
 const LogoutBtn = () => {
     return (
         <div>
-            <BtnS className="btn">
-                logOut
+            <Link to='/login'>
+                <BtnS className="btn">
+                    logOut
             </BtnS>
+            </Link>
         </div>
     );
 };

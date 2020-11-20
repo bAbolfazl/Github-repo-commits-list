@@ -11,6 +11,7 @@ import CustomInput from '../../components/customInput/customInput.component';
 const RepoForm = ({ repo }) => {
     return (
         <div className="text-center">
+            <div>NOTE: choose from one of these Abolfazl's repo and type it down ['robots-list', 'blogengine', 'Quera', 'sport-club', 'dictionary', ']</div>
             <CustomInput type='text' label="Github repository" state="repo" />
             <Link to={`/repo/${repo ? repo: null}`}>
                 <button className="btn btn-primary w-50 mt-4">Sumbit</button>
